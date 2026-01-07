@@ -680,9 +680,9 @@ body {
   }
   /* HERO */
   .hero {
-    padding: 120px 20px 60px;
     text-align: center;
-    height: auto;
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;
   }
 
   .hero-title {
@@ -710,8 +710,7 @@ body {
 
   /* ABOUT */
   .about {
-    padding: 100px 20px;
-    height: auto;
+    padding: 0;
   }
 
   .about-container {
