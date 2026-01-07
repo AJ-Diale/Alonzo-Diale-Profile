@@ -112,6 +112,16 @@ navLogo.addEventListener("click", (e) => {
 });
 
 
+const hamburger = document.getElementById('hamburger');
+const navLinks1 = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks1.classList.toggle('active');
+
+  // Animate hamburger into "X"
+  hamburger.classList.toggle('open');
+});
+
 const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
 
 navLinks.forEach(link => {
@@ -184,3 +194,5 @@ timelineItems.forEach(item => {
     });
   }
   form.addEventListener("submit", handleSubmit)
+
+
